@@ -8,13 +8,15 @@ li {
 }
 
 body {
+    background-color: #f5f5f5;
     height: 100%;
 }
 
 .file_head {
     width: 1000px;
     margin: 0 auto;
-    background-color: pink;
+    padding: 15px 0;
+    background-color: #e6f4ff;
 }
 
 .file_head_img {
@@ -30,26 +32,33 @@ body {
 }
 
 .brief_introduction {
+    display: flex;
     width: 1000px;
     margin: 0 auto;
-    background-color: yellow;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
 }
 
 .brief_content {
-    width: 700px;
-    background-color: yellow;
+    width: 750px;
+    margin: 10px;
+    /* background-color: yellow; */
+}
+
+.like {
+    padding: 10px 0;
 }
 
 .like ul {
-    height: 25px;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.like ul li:last-child {
+.like ul li:first-child {
     border-left: 1px solid white;
 }
 
 .like li {
-    float: right;
     width: 80px;
     color: #8b8b8b;
     padding: 0 10px;
@@ -65,4 +74,98 @@ body {
     text-indent: 2em;
     font-weight: 700;
     margin-top: 10px;
+}
+
+.brief_types {
+    margin-top: 10px;
+}
+
+.brief_types ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.brief_types ul li {
+    margin: 10px 0;
+}
+
+.brief_types ul li:nth-child(odd) {
+    font-weight: 700;
+    width: 100px;
+}
+
+.brief_types ul li:nth-child(even) {
+    width: 250px;
+    color: #747474;
+}
+
+.brief_img {
+    width: 230px;
+    margin: 10px;
+}
+
+.brief_img img {
+    width: 100%;
+}
+
+.information {
+    position: relative;
+    display: flex;
+    width: 1000px;
+    margin: 10px auto;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+}
+
+.inf_title {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 150px;
+    height: 40px;
+    font-size: 30px;
+    line-height: 40px;
+    background-color: #fff;
+}
+
+.inf_title span {
+    float: left;
+    display: inline-block;
+    width: 20px;
+    height: 40px;
+    margin-right: 5px;
+    background-color: #003eb2;
+}
+
+.inf_body {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px 20px;
+    margin: auto;
+}
+
+.inf_body ul {
+    display: flex;
+}
+
+.inf_body ul li {
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px dashed #eeeeee;
+    font-weight: 700;
+}
+
+.inf_body ul li:nth-child(odd) {
+    width: 100px;
+    color: #999999;
+}
+
+.inf_body ul li:nth-child(even) {
+    width: 360px;
+}
+
+.inf_body ul:first-child li {
+    padding-top: 50px;
+    border-top: 1px solid #eeeeee;
 }
