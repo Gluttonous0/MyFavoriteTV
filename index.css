@@ -169,3 +169,63 @@ body {
     padding-top: 50px;
     border-top: 1px solid #eeeeee;
 }
+
+.performer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin: 10px auto;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+}
+
+.pfm_title {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 150px;
+    height: 40px;
+    font-size: 30px;
+    line-height: 40px;
+    background-color: #fff;
+}
+
+.pfm_title span {
+    float: left;
+    display: inline-block;
+    width: 20px;
+    height: 40px;
+    margin-right: 5px;
+    background-color: #003eb2;
+}
+
+.pfm_body {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.pfm_img {
+    margin-right: 10px;
+}
+
+.pfm_inf h2 {
+    color: #0240b3;
+}
+
+.pfm_inf h4 {
+    margin: 10px 0;
+}
+
+.pfm_inf h4 span {
+    color: #b2b2b2;
+}
+
+.performer #pfm_body {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #eeeeee;
+}
