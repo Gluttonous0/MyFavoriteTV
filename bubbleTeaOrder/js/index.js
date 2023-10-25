@@ -1,9 +1,12 @@
 const btn = document.querySelector('.btn');
 const form = document.querySelector('#form');
+
+//重置表单
 btn.addEventListener('click', function () {
     form.reset();
 })
 
+//打印生成的订单内容
 const getOrderText = (formVal) => {
     const text = `
     【您的订单已经生成】
@@ -25,6 +28,7 @@ const getOrderText = (formVal) => {
     return text;
 }
 
+//创建对象，引入提交表单内容
 const onSubmit = (e) => {
     e.preventDefault();
     const formData = new FormData(form);
