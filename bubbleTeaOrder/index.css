@@ -37,6 +37,20 @@
     border-radius: 40px;
 }
 
+.scrolltop {
+    display: none;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 33px;
+    height: 33px;
+    border: 1px solid rgb(182, 182, 182);
+    color: rgb(114, 114, 114);
+    text-align: center;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
 .bodyContent {
     display: flex;
     justify-content: center;

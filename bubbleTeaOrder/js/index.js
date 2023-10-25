@@ -51,3 +51,24 @@ const onSubmit = (e) => {
 }
 
 form.addEventListener("submit", onSubmit);
+
+var scroll_top = document.querySelector('.scrolltop');
+var bodyTop = window.pageYOffset;
+
+//滚动条控制“回到首页”按钮是否展示
+window.addEventListener('scroll', function () {
+    // 获取滚动条距离
+    let bodyTop = window.pageYOffset;
+    // console.log(bodyTop);
+    //判断滚动条距离是否大于200，是则展示，否则隐藏.
+    if (bodyTop >= 200) {
+        scroll_top.style.display = "block";
+    } else {
+        scroll_top.style.display = "none";
+    }
+})
+
+//点击按钮回到首页事件
+scroll_top.addEventListener('click', function () {
+    scrollTo(0, 0);
+})
